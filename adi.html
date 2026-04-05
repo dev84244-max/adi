@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adi's Tel Chattai Business</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #111, #222);
+        color: white;
+        text-align: center;
+    }
+
+    header {
+        padding: 20px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .hero {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin: 10px;
+        transition: 0.3s;
+    }
+
+    p {
+        font-size: 18px;
+        opacity: 0.8;
+    }
+
+    .btn {
+        margin-top: 20px;
+        padding: 12px 25px;
+        background: orange;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .btn:hover {
+        background: red;
+        color: white;
+    }
+
+    footer {
+        padding: 15px;
+        background: black;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+
+<header id="headerText">Adi's Tel Chattai Business</header>
+
+<div class="hero">
+    <h1 id="mainText">Welcome to Our Business</h1>
+    <p>Best quality tel chattai at affordable price</p>
+    <button class="btn">Contact Us</button>
+</div>
+
+<footer>
+    © 2026 Adi's Tel Chattai Business | All Rights Reserved
+</footer>
+
+<script>
+function randomColor() {
+    let letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+setInterval(() => {
+    document.getElementById("headerText").style.color = randomColor();
+    document.getElementById("mainText").style.color = randomColor();
+}, 700);
+</script>
+
+</body>
+</html>
